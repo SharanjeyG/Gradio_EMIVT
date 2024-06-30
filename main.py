@@ -17,10 +17,10 @@ import torch
 from TTS.api import TTS
 import requests
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "tribal-booth-414608-dbc61449795a.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "GOOGLE API-KEY"
 RATE = 44100 
 
-genai.configure(api_key="AIzaSyB-f-KRov7a3KxB7Dqon3kpoTWGwEUld9E")
+genai.configure(api_key="API-KEY")
 model = genai.GenerativeModel('gemini-pro')
 
 class MicrophoneRecorder:
